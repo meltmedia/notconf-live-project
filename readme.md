@@ -10,15 +10,15 @@ For those that are attending NotConf, for your pull request you will get entered
 
 ## Directions
 - **Step 1:** Fork this repository.
-- **Step 2:** Create a branch named with your github username.
+- **Step 2:** Copy ./source to ./submissions/{your github username}.
 - **Step 3:** Start creating!
 - **Step 4:** Push your changes and perform a pull request.
 - **Step 5:** Come check in with us to be entered in the raffle.
 
 ## Rules
 - Your name, github username, or twitter handle must be visible somewhere on the page.
-- You must have a unique branch within the project. That way we don't have merge conflicts.
-- You can merge your branch with anyone elses branches and build off of their work; however you cannot remove that users information from the page.
+- You must have a folder named with your github username under the  submissions folder. That way we don't have merge conflicts.
+- You can duplicate another users folder and build off of their work; however you cannot remove that users information from the page.
 - Everything you start with must be there when you are done and perform your pull request.
 - Anyone is welcome to participate; however you can only win if you are attending NotConf.
 - All of the work will be done under the MIT License
