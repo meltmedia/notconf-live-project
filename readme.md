@@ -9,11 +9,11 @@ Periodically throughout the day (about every half hour) we will be looking at th
 For those that are attending NotConf, for your pull request you will get entered into a raffle to win a new iPad. Those of you who couldn't make it out we'd love to see what you have, even if you can't enter into the raffle. We'll stop taking pull requests at 4PM so make sure they are in, then come check in with us to ensure you're entered into the raffle.
 
 ## Directions
-**Step 1:** Fork this repository.
-**Step 2:** Create a branch named with your github username.
-**Step 3:** Start creating!
-**Step 4:** Push your changes and perform a pull request.
-**Step 5:** Come check in with us to be entered in the raffle.
+- **Step 1:** Fork this repository.
+- **Step 2:** Create a branch named with your github username.
+- **Step 3:** Start creating!
+- **Step 4:** Push your changes and perform a pull request.
+- **Step 5:** Come check in with us to be entered in the raffle.
 
 ## Rules
 - Your name, github username, or twitter handle must be visible somewhere on the page.
