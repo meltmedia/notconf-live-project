@@ -9,10 +9,12 @@ Periodically throughout the day (about every half hour) we will be looking at th
 For those that are attending NotConf, for your pull request you will get entered into a raffle to win a new iPad. Those of you who couldn't make it out we'd love to see what you have, even if you can't enter into the raffle. We'll stop taking pull requests at 4PM so make sure they are in, then come check in with us to ensure you're entered into the raffle.
 
 ## Directions
-- **Step 1:** Fork this repository.
-- **Step 2:** Copy ./source to ./submissions/{your github username}.
-- **Step 3:** Start creating!
-- **Step 4:** Push your changes and perform a pull request.
+- **Step 1:** Fork this repository and clone your fork.
+- **Step 2:** run npm install
+- **Step 3:** run ./bin/yeehaw create <github username> <source github username>
+_note:_ The source github username is optional. Use that if you want to build off of someone elses submission.
+- **Step 4:** Start creating something amazing.
+- **Step 4:** Once finished, perform a pull request.
 - **Step 5:** Come check in with us to be entered in the raffle.
 
 ## Rules
@@ -25,7 +27,7 @@ For those that are attending NotConf, for your pull request you will get entered
 
 
 ### MIT License
-Copyright (c) 2012 meltmedia
+Copyright (c) 2012 meltmedia and contributors
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 

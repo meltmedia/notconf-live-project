@@ -1,0 +1,21 @@
+{
+  "author": "Nick Crohn <nick@meltmedia.com> (http://meltmedia.com)",
+  "name": "cowboy",
+  "description": "Live Project for NotConf",
+  "version": "0.0.0",
+  "homepage": "http://cowboy.notconf.com",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/meltmedia/cowboy.git"
+  },
+  "main": "bin/yeehaw",
+  "dependencies": {
+    "flatiron": "0.1.14",
+    "wrench": "1.3.7"
+  },
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}

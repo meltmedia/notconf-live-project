@@ -1,0 +1,28 @@
+#!/usr/bin/env node
+
+var flatiron = require('flatiron'),
+    path = require('path'),
+    app = flatiron.app;
+
+var actions = {
+  create: 'Starts a new version of the project',
+  build: 'Builds the project into a static site'
+};
+
+app.use(flatiron.plugins.cli, {
+
+          dir: path.join(__dirname, '..', 'lib', 'cli'),
+          usage: [
+            'Yeehaw Cowboy!',
+            '',
+            'Commands:'
+          ].concat(Object.keys(actions).map(function(key){
+              return '  ' + key + ' - ' + actions[key]  ;
+          }))
+
+        });
+
+app.alias('new', 'create');
+
+app.start();
+
