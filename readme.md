@@ -11,8 +11,7 @@ For those that are attending NotConf, for your pull request you will get entered
 ## Directions
 - **Step 1:** Fork this repository and clone your fork.
 - **Step 2:** run npm install
-- **Step 3:** run ./bin/yeehaw create <github username> <source github username>
-_note:_ The source github username is optional. Use that if you want to build off of someone elses submission.
+- **Step 3:** run ./bin/yeehaw create &lt;github username&gt; &lt;source github username&gt; (_note:_ The source github username is optional. Use that if you want to build off of someone elses submission.)
 - **Step 4:** Start creating something amazing.
 - **Step 4:** Once finished, perform a pull request.
 - **Step 5:** Come check in with us to be entered in the raffle.
