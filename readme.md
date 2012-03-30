@@ -2,16 +2,20 @@
 http://liveproject.notconf.com
 
 ## Let's Get this Wagon Train a Movin'
-Living Cowboy is a project that showcases the talents of many individuals. The goal is to have fun and create something awesome, while showing off your development prowess. Read the directions and rules below before getting started and then you're off to the cattle drive.
+The NotConf Live Project is a project that showcases the talents of many individuals. The goal is to have fun and create something awesome, while showing off your development prowess. Read the directions and rules below before getting started and then you're off to the cattle drive.
 
-Periodically throughout the day (about every half hour) we will be looking at the pull requests and pushing the coolest ones we see, live to http://cowboy.notconf.com. After the conference we will be putting everyones submissions live on the site for all to see.
+Periodically throughout the day on April 1st (about every half hour) we will be looking at the pull requests and pushing the coolest ones we see, live to http://liveproject.notconf.com. After the conference we will be putting everyones submissions live on the site for all to see.
 
-For those that are attending NotConf, for your pull request you will get entered into a raffle to win a new iPad. Those of you who couldn't make it out we'd love to see what you have, even if you can't enter into the raffle. We'll stop taking pull requests at 4PM so make sure they are in, then come check in with us to ensure you're entered into the raffle.
+For those that are attending NotConf, for your pull request you will get entered into a raffle to win a new iPad. Those of you who couldn't make it out we'd love to see what you have, even if you can't enter into the raffle. We'll stop taking pull requests at 5PM so make sure they are in, then come check in with us to ensure you're entered into the raffle.
 
 ## Directions
 - **Step 1:** Fork this repository and clone your fork.
 - **Step 2:** run npm install
-- **Step 3:** run ./bin/yeehaw create &lt;github username&gt; &lt;source github username&gt; <br/>(_note: The source github username is optional. Use that if you want to build off of someone elses submission._)
+- **Step 3:** run the command below
+    
+    ./bin/yeehaw create &lt;github username&gt; &lt;source github username&gt; 
+    (_note: The source github username is optional. Use that if you want to build off of someone elses submission._)
+
 - **Step 4:** Start creating something amazing.
 - **Step 5:** Once finished, commit, push, and perform a pull request.
 - **Step 6:** Come check in with us at the registration table to be entered in the raffle.
