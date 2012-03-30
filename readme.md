@@ -1,5 +1,5 @@
-# Living Cowboy
-http://cowboy.notconf.com
+# NotConf Live Project
+http://liveproject.notconf.com
 
 ## Let's Get this Wagon Train a Movin'
 Living Cowboy is a project that showcases the talents of many individuals. The goal is to have fun and create something awesome, while showing off your development prowess. Read the directions and rules below before getting started and then you're off to the cattle drive.
