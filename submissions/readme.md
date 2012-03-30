@@ -1,1 +1,1 @@
-# Put your submissions in here.
+# Here are all of the wonderful submissions. What are you waiting for? Make yours now!

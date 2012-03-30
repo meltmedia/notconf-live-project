@@ -1,0 +1,47 @@
+/**
+ *
+ * Create some styles
+ *
+ */
+
+body {
+  background-color: #DECEA0;
+}
+
+.wrapper {
+  margin: 150px auto 0;
+  position: relative;
+  width: 400px;
+}
+
+.logo {
+  background: url('../images/notconf-logo.png') no-repeat 0 0;
+  float: left;
+  height: 140px;
+  left: 80px;
+  position: absolute;
+  text-indent: -9999em;
+  width: 240px;
+  z-index: 1;
+}
+
+.hat {
+  background: url('../images/hat.png') no-repeat 0 0;
+  float: left;
+  height: 97px;
+  position: absolute;
+  text-indent: -9999em;
+  top: -28px;
+  left: 42px;
+  width: 148px;
+  z-index: 2;
+}
+
+.wrapper h1 {
+  color: #ffffff;
+  float: left;
+  position: absolute;
+  text-align: center;
+  top: 120px;
+  width: 100%;
+}
