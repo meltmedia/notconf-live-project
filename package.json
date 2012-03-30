@@ -11,7 +11,8 @@
   "main": "bin/yeehaw",
   "dependencies": {
     "flatiron": "0.1.14",
-    "wrench": "1.3.7"
+    "wrench": "1.3.7",
+    "nconf": "0.5.1"
   },
   "devDependencies": {},
   "optionalDependencies": {},
