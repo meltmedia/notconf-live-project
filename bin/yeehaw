@@ -1,5 +1,12 @@
 #!/usr/bin/env node
 
+/**
+ *
+ * Copyright(c) 2012 Nick Crohn <nick@meltmedia.com>
+ * MIT LICENSE
+ *
+ */
+
 var flatiron = require('flatiron'),
     path = require('path'),
     app = flatiron.app;
