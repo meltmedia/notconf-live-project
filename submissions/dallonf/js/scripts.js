@@ -17,8 +17,8 @@ var car = {
   naturalDecel: 100,
   accel: 200,
   brake: 300,*/
-  startSpeed: 50,
-  accel: 0.1,
+  startSpeed: 100 ,
+  accel: 0.5,
   turnSpeed: 360
 };
 
@@ -34,6 +34,16 @@ var input = {
   right: false
 };
 
+var obstacles = [];
+
+function createObstacle(x, y) {
+  return {
+    x: x,
+    y: y,
+    radius: 30
+  };
+}
+
 
 var canvas = document.getElementById('track');
 var ctx = canvas.getContext('2d');
@@ -48,6 +58,7 @@ function loadImgAsset(name, path) {
 }
 
 loadImgAsset('car', 'images/hat.png');
+loadImgAsset('obstacle', 'images/cactus3.png');
 
 function checkStart() {
   assets.ready += 1;
@@ -57,28 +68,18 @@ function checkStart() {
 }
 
 $(window).keydown(function(e) {
-  //w: 87
-  //a: 65
-  //s: 83
-  //d: 68
+  //37 - left
+  //39 - right
 
-  if (e.which == 87) {
-    input.accel = true;
-  } else if (e.which == 83) {
-    input.brake = true;
-  } else if (e.which == 65) {
+  if (e.which == 37) {
     input.left = true;
-  } else if (e.which == 68) {
+  } else if (e.which == 39) {
     input.right = true;
   }
 }).keyup(function(e) {
-  if (e.which == 87) {
-    input.accel = false;
-  } else if (e.which == 83) {
-    input.brake = false;
-  } else if (e.which == 65) {
+  if (e.which == 37) {
     input.left = false;
-  } else if (e.which == 68) {
+  } else if (e.which == 39) {
     input.right = false;
   } else if (e.which == 32) {
     if (!track.executing) {
@@ -97,6 +98,21 @@ function start() {
   car.y = track.height / 2;
   car.angle = 90;
   car.speed = car.startSpeed;
+
+  obstacles.length = 0;
+
+  var midX = track.width / 2;
+  var midY = track.height / 2;
+  while(obstacles.length < 5) {
+    
+    var x = Math.random() * track.width;
+    var y = Math.random() * track.width;
+
+    if ((x - midX)*(x - midX) + (y - midY)*(y - midY) > 30*30) {
+      obstacles.push(createObstacle(x, y));
+    }
+    
+  }
 
   track.startTime = new Date();
 }
@@ -158,12 +174,25 @@ function update (elapsedTime) {
   car.x += Math.sin(car.angle / 180 * Math.PI) * elapsedTime*car.speed;
   car.y += Math.cos(car.angle / 180 * Math.PI) * elapsedTime*car.speed;
 
+  var collision = false;
+
+  obstacles.forEach(function(obstacle) { 
+    if ((obstacle.x - car.x)*(obstacle.x - car.x) + (obstacle.y - car.y)*(obstacle.y - car.y) < obstacle.radius*obstacle.radius) {
+      collision = true;
+    }
+  });
+
   if (car.x + car.radius > track.width ||
       car.x - car.radius < 0 ||
       car.y + car.radius > track.height||
-      car.y - car.radius < 0) {
+      car.y - car.radius < 0 ||
+      collision) {
     stop();
   }
+
+
+
+  
 }
 
 function draw() {
@@ -176,11 +205,20 @@ function draw() {
   ctx.scale(0.35, 0.35);
   ctx.rotate((-car.angle + 90) / 180 * Math.PI);
   ctx.translate(-assets.car.width / 2, -assets.car.height / 2);
-  
-  
   ctx.drawImage(assets.car, 0, 0);
-
   ctx.restore();
+
+  
+  obstacles.forEach(function(obstacle) {
+    ctx.save();
+    ctx.translate(obstacle.x, obstacle.y);
+    ctx.scale(0.35, 0.35);
+    ctx.translate(-assets.obstacle.width / 2, -assets.obstacle.height / 2);
+    ctx.drawImage(assets.obstacle, 0, 0);
+    ctx.restore();
+  });
+
+  
 
 }
 
