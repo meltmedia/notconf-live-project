@@ -28,8 +28,6 @@ var assets = {
 };
 
 var input = {
-  accel: false,
-  brake: false,
   left: false,
   right: false
 };
@@ -114,6 +112,8 @@ function start() {
     
   }
 
+  input.left = false;
+  input.right = false;
   track.startTime = new Date();
 }
 
