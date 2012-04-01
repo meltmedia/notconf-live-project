@@ -33,3 +33,10 @@ Future Features (maybe even later today)
 - Work with In Focus site 
 - Attempt to make the make it work with any photo gallery (by seeking out long lists of images)
 - Fancier transitions (CSS3 Animations)
+
+
+About me
+--------
+
+- Patrick filler @pfiller
+- github.com/pfiller
