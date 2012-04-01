@@ -8,6 +8,11 @@ body {
   background-color: #DECEA0;
 }
 
+p { 
+    position: absolute;
+    top: 300px;
+}
+
 .wrapper {
   margin: 150px auto 0;
   position: relative;
