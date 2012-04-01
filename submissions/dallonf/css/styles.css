@@ -1,0 +1,46 @@
+/**
+ *
+ * Create some styles
+ *
+ */
+
+body {
+  background-color: #DECEA0;
+}
+
+.wrapper {
+  margin: 100px auto 0;
+  position: relative;
+  width: 400px;
+}
+
+#track {
+  border: #000000 2px solid;
+}
+
+.container {
+  width: 404px;
+  height: 304px;
+  position: relative;
+}
+
+#message {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.6);
+  line-height: 304px;
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+
+}
+
+#leaderboard {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
