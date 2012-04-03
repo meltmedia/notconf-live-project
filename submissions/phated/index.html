@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>NotConf Live Project by Phated</title>
+    <meta name="author" content="Phated">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script data-dojo-config="async: true, isDebug: 1" src="http://ajax.googleapis.com/ajax/libs/dojo/1.7.2/dojo/dojo.js"></script>
+    <script>
+      require({
+        baseUrl: "js/",
+        tlmSiblingOfDojo: false,
+        packages: [
+          { name: "dojo", location: "dojo" },
+          { name: "mwe", location: "monwarp" },
+          { name: "game", location: "./", main: "game" }
+        ]
+      }, ['game']);
+    </script>
+    <style>
+    body {
+      -webkit-transform: translateZ(0);
+    }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper" style="margin: 50px auto; width: 700px;">
+      <h1 style="text-align: center; position: relative; top: 0;">We &lt;3 JSConf</h1>
+      <div>
+        Blaine Bublitz
+        <br>
+        github.com/phated
+        <br>
+        @IcedDev
+      </div>
+      <canvas id="badassCanvas"></canvas>
+      <div>Click thumbnails!</div>
+    </div>
+  </body>
+</html>
