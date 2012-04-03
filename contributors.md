@@ -1,3 +1,4 @@
+- [Aaron Kavlie](http://github.com/akavlie)
 - [Dallon Feldner](http://github.com/dallonf)
 - [Phil Renaud](http://github.com/philrenaud)
 - [meltmedia](http://github.com/meltmedia)
